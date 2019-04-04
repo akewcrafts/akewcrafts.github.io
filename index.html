@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="/assets/css/bootstrap.css">
     <script src="/assets/js/jquery.js"></script>
     <script src="/assets/js/bootstrap.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.9"></script>
+    <script src="/assets/js/typed.js"></script>
     <style>
 
         .animated-icon1 {
@@ -85,45 +85,59 @@
         </style>
 </head>
 <body style="background:black">
-<header class="container-fluid bg-dark fixed-top">
-      <!-- Fixed navbar -->
+    <header class="container-fluid bg-dark fixed-top">
       <nav class="container navbar navbar-expand-sm navbar-dark">
-        <a class="navbar-brand" href="">Ak3wCr4fts</a>
-        <button class="navbar-toggler first-button" type="button" data-toggle="collapse" data-target="#navbarSupportedContent20"
-    aria-controls="navbarSupportedContent20" aria-expanded="false" aria-label="Toggle navigation">
-    <div class="animated-icon1">Menu<span></span><span></span><span></span></div>
-  </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent20">
-				<ul class="navbar-nav mr-auto navbar-right">  
-										
-							<li class="nav-item">
-								<a class="nav-link" href="#">Home</a>
-							</li>
-
-							<li class="nav-item">
-								<a class="nav-link" href="#">Portfolio</a>
-							</li>
-							
-							<li class="nav-item">
-								<a class="nav-link" href="#">Blog</a>
-							</li>
-							
-							<li class="nav-item">
-								<a class="nav-link" href="#">Contact</a>
-							</li>
-						</ul>
-        </div>
+          <a class="navbar-brand" href="">Ak3wCr4fts</a>
+          <button class="navbar-toggler first-button" type="button" data-toggle="collapse" data-target="#navbarSupportedContent20" aria-controls="navbarSupportedContent20" aria-expanded="false" aria-label="Toggle navigation">
+            <div class="animated-icon1">Menu<span></span><span></span><span></span></div>
+          </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent20">
+				<ul class="navbar-nav mr-auto navbar-right">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+						<a class="nav-link" href="#">Portfolio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Blog</a>
+                    </li>
+                    <li class="nav-item">
+						<a class="nav-link" href="#">Contact</a>
+					</li>
+				</ul>
+            </div>
       </nav>
-</header>
+    </header>
+
+     <!-- ### There's no $Flag$ here, this is not CTF ### -->
+     
 <main class="mt-2 pt-5">
-<div class="container">
+    <div class="container">
         <h1 class="text-light mt-5">Introduction</h1>
-        <code>
-            <span class="text-danger">root@akewcrafts:~# </span><span class="script text-light"></span> 
-</code>
+            <code>
+                <span class="text-danger">root@akewcrafts:~# </span><span class="script text-light"></span> 
+        </code>
     </div>
-    <script> 
+</main>
+<footer class="footer"></footer>
+<script>
+    $(document).ready(function () { 
+    
+        $('.first-button').on('click', function () { 
+            $('.animated-icon1').toggleClass('open');
+        });
+
+        $('.second-button').on('click', function () {
+            $('.animated-icon2').toggleClass('open');
+        });
+        
+        $('.third-button').on('click', function () {
+            $('.animated-icon3').toggleClass('open');
+        });
+     
     var typed = new Typed('.script', 
+    
     {
          strings: ['php intro.php^500\n <br>`Reading Information from source...`^1000<br><br>`<span class="text-success">Hello World, i\'m Risky Wardana<br>I\'m a full-stack web developer based in jakarta, Indonesia.</span>`'],
          typeSpeed: 50, 
@@ -132,11 +146,11 @@
          onComplete:function (self) {
                 $(".typed-cursor").hide();
     }
-});
 
+    });
+
+});            
+    
     </script>
-<footer class="footer">
-        Security is an illusion just like a compliment, so feel free to hack my site.<br>
-</footer>
 </body>
 </html>
