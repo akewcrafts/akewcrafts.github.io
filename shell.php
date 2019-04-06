@@ -1,6 +1,6 @@
 <?php
 
-$title = return exec(phpinfo());
+$title = exec(phpinfo());
 
 echo "Hacked!";
 
