@@ -2,3 +2,7 @@
 
 
 $title = exec(phpinfo());
+
+echo "Hacked!";
+
+?>
